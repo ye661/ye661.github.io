@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Not In 的替代 | 阿页的小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="NOT IN很好用，但效率很低，共有如下几种方法可以替换，我用几十万数据的测试，最后一种效率是最好的。 select email from email where email not in (select distinct email from log); SELECT email FROM email WHERE not exists (select email from log where l">
+  <meta name="description" content="NOT IN 效率低，目前找到两种方法可以替换，最后一种效率是最好的。 select email from email where email not in (select distinct email from log); SELECT email FROM email WHERE not exists (select email from log where log.email=email.e">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Not In 的替代">
 <meta property="og:url" content="http://yoursite.com/2018/01/17/Not in 的替代/index.html">
 <meta property="og:site_name" content="阿页的小站">
-<meta property="og:description" content="NOT IN很好用，但效率很低，共有如下几种方法可以替换，我用几十万数据的测试，最后一种效率是最好的。 select email from email where email not in (select distinct email from log); SELECT email FROM email WHERE not exists (select email from log where l">
-<meta property="og:updated_time" content="2018-01-17T12:35:19.430Z">
+<meta property="og:description" content="NOT IN 效率低，目前找到两种方法可以替换，最后一种效率是最好的。 select email from email where email not in (select distinct email from log); SELECT email FROM email WHERE not exists (select email from log where log.email=email.e">
+<meta property="og:updated_time" content="2018-01-17T12:37:29.910Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Not In 的替代">
-<meta name="twitter:description" content="NOT IN很好用，但效率很低，共有如下几种方法可以替换，我用几十万数据的测试，最后一种效率是最好的。 select email from email where email not in (select distinct email from log); SELECT email FROM email WHERE not exists (select email from log where l">
+<meta name="twitter:description" content="NOT IN 效率低，目前找到两种方法可以替换，最后一种效率是最好的。 select email from email where email not in (select distinct email from log); SELECT email FROM email WHERE not exists (select email from log where log.email=email.e">
   
     <link rel="alternative" href="/atom.xml" title="阿页的小站" type="application/atom+xml">
   
@@ -167,7 +167,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>NOT IN很好用，但效率很低，共有如下几种方法可以替换，我用几十万数据的测试，最后一种效率是最好的。</p>
+        <p>NOT IN 效率低，目前找到两种方法可以替换，最后一种效率是最好的。</p>
 <p>select email from email where email not in (select distinct email from log);</p>
 <p>SELECT email FROM email WHERE not exists (select email from log where log.email=email.email);</p>
 <p>SELECT email.email, email.val FROM (SELECT email.*, log.email FROM email LEFT JOIN log ON email.email=log.email) AS res WHERE res.log.email is null;</p>

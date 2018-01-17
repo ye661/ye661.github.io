@@ -165,7 +165,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>NOT IN很好用，但效率很低，共有如下几种方法可以替换，我用几十万数据的测试，最后一种效率是最好的。</p>
+        <p>NOT IN 效率低，目前找到两种方法可以替换，最后一种效率是最好的。</p>
 <p>select email from email where email not in (select distinct email from log);</p>
 <p>SELECT email FROM email WHERE not exists (select email from log where log.email=email.email);</p>
 <p>SELECT email.email, email.val FROM (SELECT email.*, log.email FROM email LEFT JOIN log ON email.email=log.email) AS res WHERE res.log.email is null;</p>
