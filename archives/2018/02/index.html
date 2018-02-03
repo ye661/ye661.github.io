@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>阿页的小站</title>
+  <title>Archives: 2018/2 | 阿页的小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="阿页的小站">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2018/02/index.html">
 <meta property="og:site_name" content="阿页的小站">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿页的小站">
@@ -145,229 +145,47 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Markdown使用测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/03/Markdown使用测试/">Markdown 编辑测试</a>
-    </h1>
-  
-
-        
-        <a href="/2018/02/03/Markdown使用测试/" class="archive-article-date">
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/02/03/Markdown使用测试/" class="archive-article-date">
   	<time datetime="2018-02-03T12:42:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-03</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>[ ] 待办事项</li>
-<li>[x] 已完成事项</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line">int main(void)</div><div class="line">&#123;</div><div class="line">    printf(&quot;Hello world\n&quot;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>产品</th>
-<th>价格</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Leanote 高级账号</td>
-<td>60元/年</td>
-</tr>
-<tr>
-<td>Leanote 超级账号</td>
-<td>120元/年</td>
-</tr>
-</tbody>
-</table>
-<h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div></pre></td></tr></table></figure>
-<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">graph LR</div><div class="line">A--&gt;B</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">graph LR</div><div class="line">A--&gt;B</div><div class="line">B--&gt;C</div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/03/Markdown使用测试/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-Not in 的替代" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/17/Not in 的替代/">Not In 的替代</a>
+      <a class="archive-article-title" href="/2018/02/03/Markdown使用测试/">Markdown 编辑测试</a>
     </h1>
   
 
-        
-        <a href="/2018/01/17/Not in 的替代/" class="archive-article-date">
-  	<time datetime="2018-01-17T12:42:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>NOT IN 效率低，目前找到两种方法可以替换，最后一种效率是最好的。</p>
-<p>select email from email where email not in (select distinct email from log);</p>
-<p>SELECT email FROM email WHERE not exists (select email from log where log.email=email.email);</p>
-<p>SELECT email.email, email.val FROM (SELECT email.*, log.email FROM email LEFT JOIN log ON email.email=log.email) AS res WHERE res.log.email is null;</p>
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/17/Not in 的替代/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
   
-    <article id="post-在 CentOS 7 下安装 Oracle 11gR2 日志" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/30/在 CentOS 7 下安装 Oracle 11gR2 日志/">在 CentOS 7 下安装 Oracle 11gR2 日志</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/30/在 CentOS 7 下安装 Oracle 11gR2 日志/" class="archive-article-date">
-  	<time datetime="2017-05-30T00:33:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>尝试在 CentOS 7 下安装 Oracle 11gR2，按照 <a href="http://www.linuxidc.com/Linux/2016-04/130559.htm" target="_blank" rel="external">http://www.linuxidc.com/Linux/2016-04/130559.htm</a> 的方法，折腾了半天但还是会报 ORA-09925: Unable to create audit trail file，决定重装。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/30/在 CentOS 7 下安装 Oracle 11gR2 日志/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-阿页的网站" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/24/阿页的网站/">阿页的网站</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/24/阿页的网站/" class="archive-article-date">
-  	<time datetime="2017-05-24T12:42:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这里以后就是写东西的地方了，太穷，就先不申请域名了……</p>
-<p>基本上是按照以下教程搭建的，有兴趣的可以参考之。Git和Node.js也是俺打算学习的技能。</p>
-<p>教程传送门：<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/26625249</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/24/阿页的网站/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-  
 
 
           </div>
@@ -389,9 +207,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
